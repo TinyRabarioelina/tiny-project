@@ -1,0 +1,321 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Jellyka;
+	src: url("../font/Jellyka_Estrya_Handwriting.ttf");
+}
+
+@font-face {
+	font-family: DanielBlack;
+	src: url("../font/Daniel-Black.otf");
+}
+
+@font-face {
+	font-family: Lato;
+	src: url("../font/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family: LatoBold;
+	src: url("../font/Lato-Bold.ttf");
+}
+
+@font-face {
+	font-family: LatoBlack;
+	src: url("../font/Lato-Black.ttf");
+}
+
+body {
+	background-color: #ddd;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.Map {
+	width: 100%;
+	height: 250px;
+}
+
+.MainContainer {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 0px;
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+@media
+{
+.MainContainer (max-width : 320px ){
+	margin-top: 0px;
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+}
+.HeaderImageContainer {
+	height: 360px;
+	width: 100%;
+	margin-top: 20px;
+	position: relative;
+}
+
+.HeaderImage {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.HeaderText {
+	color: #ffffff;
+	font-family: Jellyka;
+	font-size: 90px;
+	position: absolute;
+	left: 20px;
+	top: 0px;
+}
+
+.Paragraph {
+	color: #fff;
+	font-family: Lato;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 30px;
+	text-shadow: 5px 5px rgba(30, 30, 30, 0.1);
+}
+
+.MainBody {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row;
+}
+
+.MenuContainer {
+	width: 100%;
+	height: 60px;
+	background: linear-gradient(#247D9F, #076083);
+	position: fixed;
+	top: 0;
+	box-shadow: 0px 2px 5px rgba(30, 30, 30, 0.1);
+	z-index: 99;
+}
+
+.Menu {
+	height: 60px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.MenuSection {
+	width: 12vw;
+	height: 100%;
+	cursor: pointer;
+	flex-direction: column;
+	position: absolute;
+	display: block;
+	text-align: center;
+}
+
+.MenuTitle {
+	color: #fff;
+	font-family: Lato;
+	font-size: 15px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 60px;
+}
+
+.MenuSection:hover .MenuTitle {
+	color: rgba(200, 200, 200, 1);
+}
+
+.MenuDropDown {
+	display: none;
+	position: absolute;
+	top: 60px;
+	margin: 0px;
+}
+
+.MenuSection:HOVER .MenuDropDown {
+	display: block;
+}
+
+.MenuDropDownCell {
+	width: 100%;
+	color: #fff;
+	background-color: #076083;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	font-family: Lato;
+	font-size: 13px;
+}
+
+.MenuDropDownCell:hover {
+	color: rgba(200, 200, 200, 1);
+}
+
+.CenterContainer {
+	background: rgba(255, 255, 255, 0);
+	padding: 0;
+	width: 100%;
+	position: relative;
+}
+
+.TripTypeContainer {
+	display: flex;
+	flex-direction: row;
+	width: 75%;
+	height: 19vw;
+	margin-top: 10px;
+	align: center;
+	margin-left: 12.5%;
+}
+
+.TripType {
+	width: 33.33%;
+	height: 100%;
+	display: table;
+	background-size: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.TripTypeText {
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 25px;
+	margin: auto;
+	display: table-cell;
+	vertical-align: middle;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 1px;
+}
+
+.TripType :hover {
+	font-size: 26px;
+	background: rgba(0, 0, 0, .5);
+}
+
+.DestinationContainer {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 18vw;
+	margin-top: 20px;
+	align: center;
+}
+
+.Destination {
+	width: 50%;
+	height: 100%;
+	display: table;
+	background-size: cover;
+	text-align: center;
+	cursor: pointer;
+	background-position: center center;
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+	flex-direction: column;
+	position: relative;
+	display: block;
+}
+
+.DestinationTextBackground {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 35px;
+	background: #fff;
+}
+
+.DestinationText {
+	color: #000;
+	font-family: Lato;
+	font-size: 15px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.DestinationMarker {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+}
+
+.DestinationDescription {
+	display: none;
+	flex-flow: column;
+	position: absolute;
+	background-color: #fff;
+	top: 100%;
+	width: 100%;
+	z-index: 99;
+	text-align: left;
+	box-shadow: 4px 4px 5px rgba(30, 30, 30, 0.2), -4px 4px 5px
+		rgba(30, 30, 30, 0.2);
+}
+
+.DestinationDescriptionText {
+	font-family: Lato;
+	font-size: 15px;
+	color: #000;
+	margin-left: 20%;
+}
+
+.Destination:hover {
+	box-shadow: 4px 0px 5px rgba(30, 30, 30, 0.2), -4px 0px 5px
+		rgba(30, 30, 30, 0.2);
+}
+
+.Destination:hover .DestinationDescription {
+	display: flex;
+}
+
+.Footer {
+	background: linear-gradient(#247D9F, #076083);
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+.FooterText {
+	color: #fff;
+	font-family: Lato;
+	font-size: 15px;
+}
+
+a {
+	color: inherit;
+	background-color: transparent;
+	text-decoration: none
+}
+
+a:link {
+	color: inherit;
+}
+
+a:hover {
+	color: inherit;
+}
+
+a:active {
+	color: inherit;
+}

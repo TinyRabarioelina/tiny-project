@@ -1,0 +1,117 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Jellyka;
+	src: url("../font/Jellyka_Estrya_Handwriting.ttf");
+}
+
+@font-face {
+	font-family: DanielBlack;
+	src: url("../font/Daniel-Black.otf");
+}
+
+@font-face {
+	font-family: Lato;
+	src: url("../font/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family: LatoBold;
+	src: url("../font/Lato-Bold.ttf");
+}
+
+@font-face {
+	font-family: LatoBlack;
+	src: url("../font/Lato-Black.ttf");
+}
+
+.ContenuBody {
+	width: 100%;
+	text-align: center;
+	background: rgba(180, 180, 180, .5);
+	display: flex;
+	flex-flow: column;
+}
+
+.ContenuTitle {
+	color: #fff;
+	font-family: LatoBold;
+	font-size: 25px;
+}
+
+.ContenuTitle2 {
+	color: #4391cc;
+	font-family: LatoBold;
+	font-size: 25px;
+	margin-top: 30px;
+}
+
+.Day {
+	color: #aa0000;
+	font-family: LatoBold;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+.Town {
+	color: #24A63C;
+	font-size: 22px;
+	margin-top: 20px;
+	font-family: Lato;
+}
+
+.Description {
+	color: #000000;
+	font-size: 22px;
+	margin-top: 20px;
+	font-family: Lato;
+}
+
+.Hotel {
+	color: #7030A0;
+	font-size: 22px;
+	font-family: Lato;
+}
+
+.b {
+	font-family: LetoBlack;
+}
+
+.QuestionBackground {
+	background-color: rgba(0, 0, 0, .5);
+	float: top;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.QuestionContainer {
+	margin: 0 auto;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Question {
+	color: #fff;
+	font-family: LatoBold;
+	font-size: 30px;
+}
+
+.Answer {
+	color: #fff;
+	font-family: Lato;
+	font-size: 20px;
+}
+
+.Close{
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	position: absolute;
+	top: 15%;
+	right: 20%;
+}

@@ -1,0 +1,14 @@
+{
+"language_french":"Français",
+"language_english":"Anglais",
+"language_malagasy":"Malgache",
+"language_russian":"Russe",
+"language_spanish":"Espagnol",
+"type_cultural":"Culural",
+"type_relax":"Relax",
+"type_freestyle":"Freestyle",
+"circuit_north":"Circuit Nord",
+"circuit_east":"Circuit Est",
+"circuit_west":"Circuit Ouest",
+"circuit_south":"Circuit Sud"
+}
